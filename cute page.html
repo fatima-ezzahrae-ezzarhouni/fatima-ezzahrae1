@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Fatima 🌸</title>
+    <style>
+        /* Reset some default margins and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #ff69b4;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #ffb6c1;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff69b4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #ffb6c1;
+            padding: 20px;
+            font-size: 2.5em;
+            color: white;
+            border-bottom: 5px solid #ff69b4;
+        }
+
+        /* Profile section styling */
+        .profile-card {
+            background-color: white;
+            width: 300px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-card img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profile-card h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        .profile-card p {
+            color: #ff69b4;
+            font-size: 1em;
+        }
+
+        /* Fun facts section */
+        .fun-facts {
+            background-color: #fff0f5;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .fun-facts h2 {
+            font-size: 2.5em;
+        }
+
+        .fun-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .fun-facts ul li {
+            font-size: 1.5em;
+            margin: 10px 0;
+            display: inline-block;
+            background-color: #ffe4e1;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Image gallery with filters */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: white;
+            border-top: 5px solid #ffb6c1;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2);
+            filter: brightness(120%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 50px;
+        }
+
+        /* Button styling */
+        .cute-button {
+            background-color: #ff69b4;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cute-button:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+
+        /* Adding a new section for more interaction */
+        .contact-section {
+            background-color: #fff0f5;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        .contact-section input[type="text"],
+        .contact-section input[type="email"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 2px solid #ff69b4;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-section input[type="submit"] {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-section input[type="submit"]:hover {
+            background-color: #ff1493;
+        }
+
+        /* Animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .floating-text {
+            display: inline-block;
+            animation: float 2s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cute header -->
+    <header id="welcome">
+        Welcome to My Cute Page! 🌸
+    </header>
+
+    <!-- Profile section -->
+    <section id="profile" class="profile-card">
+        <img src="c:\Users\LENOVO\Desktop\S3\WhatsApp Image 2024-10-17 at 15.56.58_7fdddd15.jpg" alt="Cute Profile">
+        <h2>My Cute Profile</h2>
+        <p>Hi! I'm a lover of all things cute, and I created this page to share my love for adorable things!</p>
+    </section>
+
+    <!-- Fun facts section -->
+    <section id="fun-facts" class="fun-facts">
+        <h2>Fun Facts About Me! 🐻</h2>
+        <ul>
+            <li>I love cats 🐱</li>
+            <li>Pink is my favorite color 🌸</li>
+            <li>I enjoy baking cupcakes 🧁</li>
+            <li>I collect cute plushies 🧸</li>
+        </ul>
+    </section>
+
+    <!-- Image gallery section -->
+    <section id="gallery" class="gallery">
+        <img src="c:\Users\LENOVO\Desktop\S3\1.jpg" alt="Cute Kitten 1">
+        <img src="c:\Users\LENOVO\Desktop\S3\2.jpg" alt="Cute Kitten 2">
+        <img src="c:\Users\LENOVO\Desktop\S3\3.jpg" alt="Cute Kitten 3">
+        <img src="c:\Users\LENOVO\Desktop\S3\WhatsApp Image 2024-10-17 at 15.45.33_6629aec9.jpg" alt="Cute Kitten 4">
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me! 💌</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by a fan of all things cute! Stay adorable! 🐼</p>
+        <p>Contact: fatima.ezzarhouni2004@example.com</p>
+    </footer>
+
+</body>
+</html>
